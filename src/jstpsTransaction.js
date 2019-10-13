@@ -1,4 +1,7 @@
 class jstpsTransaction{
+    constructor(){
+        
+    }
     doTransaction(){
 
     }

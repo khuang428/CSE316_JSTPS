@@ -28,7 +28,7 @@ class jstps{
                    this.transactions.splice(i,1);
                }
            }
-        transactions.push(transaction);
+        this.transactions.push(transaction);
 
         this.doTransaction();
     }
@@ -105,4 +105,5 @@ class jstps{
         }
         return text;
     }
+
 }
