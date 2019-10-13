@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        <script src = '../src/jstps.js'></script>
-        <script src = '../src/jstpsTransaction.js'></script>
+    <header hidden>
+        <link rel="stylesheet" type="text/css" href="./css/layout.css" />
+        <script src = './src/jstps.js'></script>
+        <script src = './src/jstpsTransaction.js'></script>
+        <script src = './test/jstpsUnitTests.js'></script>
+        <script src = './test/num.js'></script>
+        <script src = './test/addToNumTransaction.js'></script>
         <title>JSTPS Tests</title>
         <script>
             window.onload = function(){
                 window.jstps = new jstps();
+                window.unitTest = new jstpsUnitTests();
+                unitTest.testAdd();
             }
         </script>
     </header>
+    <body>
+        <div class = 'row'>
+            <div class = 'column'>
+                <h3>Unit Tests</h3>
+                <h4>Test Add</h4>
+                <div id = 'add_tests'></div>
+                <h4>Test And Mask</h4>
+                <div id = 'and_mask_tests'></div>
+                <h4>Test Or Mask</h4>
+                <div id = 'or_mask_tests'></div>
+                <h4>Test Undo</h4>
+                <div id = 'undo_tests'></div>
+                <h4>Test Redo</h4>
+                <div id = 'redo_tests'></div>
+                <h4>Test Clear</h4>
+                <div id = 'clear_tests'></div>
+            </div>
+            <div class = 'column'>
+                <h3>Dynamic Testing will go here...</h3>
+                
+            </div>
+        </div>
+    </body>
 </html>
