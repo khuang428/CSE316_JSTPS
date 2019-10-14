@@ -2,7 +2,7 @@ class andMaskTransaction extends jstpsTransaction{
     constructor(initNum, initIntNum, initMask){
         super();
         this.num = initNum;
-        this.intNum - initIntNum;
+        this.intNum = initIntNum;
         this.mask = initMask;
     }
 

@@ -7,12 +7,14 @@
         <script src = './test/jstpsUnitTests.js'></script>
         <script src = './test/num.js'></script>
         <script src = './test/addToNumTransaction.js'></script>
+        <script src = './test/andMaskTransaction.js'></script>
+        <script src = './test/orMaskTransaction.js'></script>
         <title>JSTPS Tests</title>
         <script>
             window.onload = function(){
                 window.jstps = new jstps();
                 window.unitTest = new jstpsUnitTests();
-                unitTest.testAdd();
+                unitTest.runTests();
             }
         </script>
     </header>

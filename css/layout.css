@@ -1,8 +1,8 @@
 body{
     white-space: pre;
-    margin: 0;
     height: 100%;
     position: absolute;
+    font-family: sans-serif;
 }
 
 h3, h4, p{
@@ -19,8 +19,4 @@ h3, h4, p{
     table-layout: fixed;
     width: 100%;
     clear: both;
-}
-
-#add_tests, #and_mask_tests, #or_mask_tests, #undo_tests, #redo_tests, #clear_tests{
-    
 }

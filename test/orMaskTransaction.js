@@ -7,7 +7,7 @@ class orMaskTransaction extends jstpsTransaction{
     }
 
     doTransaction(){
-        this.num.orMask(mask);
+        this.num.orMask(this.mask);
     }
 
     undoTransaction(){
