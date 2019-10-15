@@ -5,6 +5,7 @@
         <script src = './src/jstps.js'></script>
         <script src = './src/jstpsTransaction.js'></script>
         <script src = './test/jstpsUnitTests.js'></script>
+        <script src = './test/jstpsTester.js'></script>
         <script src = './test/num.js'></script>
         <script src = './test/addToNumTransaction.js'></script>
         <script src = './test/andMaskTransaction.js'></script>
@@ -14,13 +15,14 @@
             window.onload = function(){
                 window.jstps = new jstps();
                 window.unitTest = new jstpsUnitTests();
+                window.jstpsTester = new jstpsTester();
                 unitTest.runTests();
             }
         </script>
     </header>
     <body>
         <div class = 'row'>
-            <div class = 'column'>
+            <div id = 'unit_tests' class = 'column'>
                 <h3>Unit Tests</h3>
                 <h4>Test Add</h4>
                 <div id = 'add_tests'></div>
@@ -35,9 +37,18 @@
                 <h4>Test Clear</h4>
                 <div id = 'clear_tests'></div>
             </div>
-            <div class = 'column'>
+            <div id = 'demo_tests' class = 'column'>
                 <h3>TPS Demo</h3>
                 <div id = "demo_info"></div>
+                <div id = "add_prompt">Enter a number to add:</div> 
+                <input id = "add_field" type="number"/>
+                <div id = "buttons">
+                    <button id = "add_button">Add a Transaction</button>
+                    <button id = "undo_button">Undo a Transaction</button>
+                    <button id = "redo_button">Redo a Transaction</button>
+                    <button id = "clear_button">Clear All Transactions</button>
+                    <button id = "reset_button">Reset Num and Transactions</button>
+                </div>        
             </div>
         </div>
     </body>
